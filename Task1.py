@@ -7,7 +7,7 @@ def load_tasks():
         with open('Mytasks.json', 'r') as taskdata:
             return json.load(taskdata)
     else:
-        return 
+        return []
 def save_tasks(tasks):
     with open('Mytasks.json', 'w') as file:
         json.dump(tasks, file, indent=4)
